@@ -97,6 +97,7 @@ button{
 
 .main{
     background-color: #FFF8F3;
+    overflow-x: clip;
 }
 
 .top{
@@ -173,6 +174,19 @@ button{
         padding-left: 20px;
         padding-right: 20px;
     }
+
+    .top__content{
+        width: 333px;
+        padding: 95px 0 70px;
+    }
+
+    .top__img-l{
+        width: 655px;
+    }
+
+    .top__img{
+        left: 300px;
+    }
 }
 
 
@@ -210,6 +224,28 @@ button{
     height: 10px;
     left: -16px;
     background-size: cover;
+    }
+
+    .top__content{
+        width: 230px;
+    }
+
+    .top__title{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .top__text{
+        font-size: 10px;
+        margin-bottom: 20px;
+    }
+
+    .top__buy{
+        padding: 15px 31px;
+    }
+
+    .top__img{
+        left: 180px;
     }
 }
 
@@ -266,5 +302,68 @@ button{
     .footer{
         padding: 50px 0;
         font-size: 14px;
+    }
+}
+
+@media (max-width: 480px){
+    .top{
+        padding: 30px 0 50px;
+    }
+
+    .top__img-l{
+        width: 309px;
+        left: 167px;
+    }
+
+    .top__content{
+        width: 180px;
+    }
+
+    .top__title{
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+
+    .top__text{
+        font-size: 8px;
+        margin-bottom: 15px;
+    }
+
+    .top__buy{
+        font-size: 10px;
+        padding: 14px 41px;
+    }
+}
+
+@media (max-width: 360px){
+    .top__img-l{
+        width: 140px;
+    }
+
+    .top__img{
+        left: auto;
+        right: 10px;
+    }
+
+    .top__content{
+        width: 203px;
+        padding: 20px 0 0;
+        position: relative;
+        z-index: 1;
+    }
+
+    .top__title{
+        width: 233px;
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .top__text{
+        font-size: 10px;
+        margin-bottom: 15px;
+    }
+
+    .top__buy{
+        padding: 11px 23px;
     }
 }
