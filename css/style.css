@@ -10,9 +10,7 @@ html{
 
 body{
     color: #000;
-
     font-family: "Comfortaa", sans-serif;
-    /* font-family: "Yeseva One", serif; */
     font-style: 14px;
     font-weight: 400;
     line-height: 1.2;
@@ -27,6 +25,14 @@ ul{
     list-style: none;
 }
 
+button{
+    font-family: "Comfortaa", sans-serif;
+    border: none;
+    padding: 0;
+    border-radius: 0;
+    cursor: pointer;
+}
+
 .container{
     max-width: 1180px;
     padding-left: 10px;
@@ -35,14 +41,11 @@ ul{
 }
 
 .menu__btn{
-    display: none;
     display: flex;
+    display: none;
     width: 30px;
     height: 25px;
-    border: none;
     background-color: transparent;
-    padding: 0;
-    border-radius: 0;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -88,6 +91,50 @@ ul{
 
 
 
+
+
+
+
+.main{
+    background-color: #FFF8F3;
+}
+
+.top{
+    padding: 40px 0 150px;
+}
+
+.top__inner{
+    position: relative;
+}
+
+.top__content{
+    width: 370px;
+    padding: 150px 0 250px;
+}
+
+.top__title{
+    font-size: 30px;
+    font-family: "Yeseva One", serif;
+    margin-bottom: 15px;
+
+}
+
+.top__text{
+    margin-bottom: 48px;
+}
+
+.top__buy{
+    padding: 18px 54px;
+    background: #FFBD59;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.top__img{
+    position: absolute;
+    top: 0;
+    left: 240px;
+}
 
 
 
@@ -185,6 +232,7 @@ ul{
         top: 0;
         transform: translateY(-110%);
         transition: transform .5s ease;
+        z-index: 5;
     }
 
     .header__menu-list.menu--open{
