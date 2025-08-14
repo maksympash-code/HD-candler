@@ -174,7 +174,21 @@ ul{
     }
 
     .header__menu-list{
-        display: none;
+        width: 163px;
+        background-color: #7B6152;
+        color: #FFF8F3;
+        flex-direction: column;
+        gap: 20px 0;
+        padding: 25px 35px 25px 45px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: translateY(-110%);
+        transition: transform .5s ease;
+    }
+
+    .header__menu-list.menu--open{
+        transform: translateY(0);
     }
 
     .menu__btn{
@@ -203,5 +217,6 @@ ul{
 
     .footer{
         padding: 50px 0;
+        font-size: 14px;
     }
 }
