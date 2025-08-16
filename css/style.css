@@ -364,6 +364,54 @@ button{
 
 
 
+
+
+
+
+.team{
+    background-color: #A5978E;
+    color: #FAFAFA;
+    padding: 80px 0 60px;
+    margin-bottom: 150px;
+}
+
+.team__content{
+    padding-bottom: 0;
+    gap: 75px;
+}
+
+.team__item{
+    position: relative;
+}
+
+.team__item-box{
+    background-color: #7B6152;
+    text-align: center;
+    position: absolute;
+    width: 165px;
+    padding: 15px 10px 16px;
+    z-index: 4;
+    bottom: 13px;
+    right: 33px;
+}
+
+.team__item-name{
+    font-size: 12px;
+    font-family: "Yeseva One", cursive;
+}
+
+.team__item-descr{
+    font-size: 10px;
+}
+
+
+
+
+
+
+
+
+
 .footer{
     padding-top: 40px;
     padding-bottom: 35px;
@@ -390,6 +438,12 @@ button{
     gap: 18px;
 }
 
+
+@media (max-width: 1100px){
+    .team__content{
+        gap: 30px 20px;
+    }
+}
 
 
 @media (max-width: 1050px){
@@ -443,6 +497,10 @@ button{
 
     .section__text{
         font-size: 10px;
+    }
+
+    .team{
+        padding: 50px 0;
     }
 }
 
@@ -624,6 +682,26 @@ button{
         right: 0;
         bottom: 9px;
     }
+
+    .team__item-img{
+        width: 140px;
+    }
+
+    .team__item-box{
+    padding: 9px 6px 10px;
+    width: 109px;
+    bottom: 8px;
+    right: -24px;
+    }
+
+    .team__item-name{
+        font-size: 8px;
+    }
+
+    .team__item-descr{
+        font-size: 7px;
+    }
+
 }
 
 
@@ -667,6 +745,11 @@ button{
     .section__descr{
         margin-bottom: 30px;
         text-align: center;
+    }
+
+    .team__item-box{
+        right: auto;
+        left: 80px;
     }
 }
 
@@ -770,6 +853,10 @@ button{
     .steps__list{
         gap: 25px 40px;
     }
+
+    .team{
+        margin-bottom: 50px;
+    }
 }
 
 @media (max-width: 404px){
@@ -792,6 +879,29 @@ button{
 
     .courses__content{
         grid-template-columns: auto;
+    }
+
+    .team__content{
+        grid-template-columns: auto;
+    }
+
+    .team__item-img{
+        width: 204px;
+    }
+
+    .team__item-box{
+        padding: 14px 8px 15px;
+        width: 156px;
+        left: 150px;
+        bottom: 13px;
+    }
+
+    .team__item-name{
+        font-size: 12px;
+    }
+
+    .team__item-descr{
+        font-size: 10px;
     }
 }
 
