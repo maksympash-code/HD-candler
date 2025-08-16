@@ -10,7 +10,7 @@ html{
 
 body{
     color: #000;
-    font-family: "Comfortaa", sans-serif;
+    font-family: "Comfortaa", cursive;
     font-style: 14px;
     font-weight: 400;
     line-height: 1.2;
@@ -26,7 +26,7 @@ ul{
 }
 
 button{
-    font-family: "Comfortaa", sans-serif;
+    font-family: "Comfortaa", cursive;
     border: none;
     padding: 0;
     border-radius: 0;
@@ -325,6 +325,44 @@ button{
 
 
 
+.courses__item--img{
+    position: relative;
+    color: #fff;
+    font-size: 11px;
+    font-family: "Yeseva One", cursive;
+}
+
+.courses__item-title{
+    padding: 15px;
+    left: 10px;
+    top: 45%;
+}
+
+.courses__time{
+    padding: 7px 10px;
+    left: 10px;
+    top: 60%;
+}
+
+.courses__time span{
+    font-size: 10px;
+    font-family: "Comfortaa", cursive;
+}
+
+.courses__price{
+    padding: 19px 10px;
+    right: 0px;
+    bottom: 2px;
+}
+
+.courses__item-title, 
+.courses__time,
+.courses__price{
+    background-color: #BEA495;
+    position: absolute;
+}
+
+
 
 .footer{
     padding-top: 40px;
@@ -568,6 +606,24 @@ button{
         font-size: 12px;
         margin-bottom: 9px;
     }
+
+    .courses__item-title{
+        padding: 6px;
+        left: -1px;
+        top: 40%;
+    }
+
+    .courses__time{
+        padding: 5px;
+        left: -1px;
+        top: 55%;
+    }
+
+    .courses__price{
+        padding: 10px;
+        right: 0;
+        bottom: 9px;
+    }
 }
 
 
@@ -733,6 +789,10 @@ button{
     .steps__item-text{
         font-size: 6px;
     }
+
+    .courses__content{
+        grid-template-columns: auto;
+    }
 }
 
 
@@ -837,5 +897,10 @@ button{
     .button{
         font-size: 8px;
         padding: 8px 20px;
+    }
+
+    .courses__item,
+    .courses__item img{
+        width: 255px;
     }
 }
